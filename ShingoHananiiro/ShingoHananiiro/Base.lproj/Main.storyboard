@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShingoHananiiro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="6yE-1D-cEm">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="signal_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="qBh-xo-8HB">
+                                <rect key="frame" x="108" y="119" width="265" height="82"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="しんごうはなにいろ？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7m-m7-ERv">
+                                <rect key="frame" x="120" y="35" width="240" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.03079350443" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7f-cf-gRb">
+                                <rect key="frame" x="100" y="201" width="280" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Iqg-di-ner"/>
+                                    <constraint firstAttribute="height" constant="35" id="uDc-1A-emY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZz-JV-SfG">
+                                <rect key="frame" x="199" y="237" width="72" height="81"/>
+                                <state key="normal" backgroundImage="btn_yellow_off.png"/>
+                                <connections>
+                                    <action selector="yellowBtnPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8KH-GK-msM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eje-Um-DeS">
+                                <rect key="frame" x="321" y="237" width="72" height="81"/>
+                                <state key="normal" backgroundImage="btn_red_off.png"/>
+                                <connections>
+                                    <action selector="redBtnPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wlL-gI-CNG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guI-CI-R8Y">
+                                <rect key="frame" x="82" y="237" width="72" height="81"/>
+                                <state key="normal" backgroundImage="btn_blue_off.png"/>
+                                <connections>
+                                    <action selector="blueBtnPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fby-LL-ZS0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6yE-1D-cEm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1D2-e0-kKu"/>
+                            <constraint firstItem="6yE-1D-cEm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4D6-sA-NLX"/>
+                            <constraint firstItem="X7f-cf-gRb" firstAttribute="top" secondItem="qBh-xo-8HB" secondAttribute="bottom" id="4kb-OV-Wr2"/>
+                            <constraint firstItem="A7m-m7-ERv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="6Ex-6s-Gza"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="guI-CI-R8Y" secondAttribute="bottom" constant="2" id="8Yu-AW-fPD"/>
+                            <constraint firstItem="qBh-xo-8HB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DKt-2L-y4j"/>
+                            <constraint firstAttribute="trailing" secondItem="6yE-1D-cEm" secondAttribute="trailing" id="PHF-C5-pyO"/>
+                            <constraint firstItem="6yE-1D-cEm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WZT-Ki-XJD"/>
+                            <constraint firstItem="X7f-cf-gRb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WoH-a7-Rrl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dZz-JV-SfG" secondAttribute="bottom" constant="2" id="cZc-gD-S9H"/>
+                            <constraint firstItem="A7m-m7-ERv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eBD-cB-wJi"/>
+                            <constraint firstItem="qBh-xo-8HB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fHK-Fo-Y2k"/>
+                            <constraint firstItem="dZz-JV-SfG" firstAttribute="leading" secondItem="guI-CI-R8Y" secondAttribute="trailing" constant="45" id="fij-nX-8Zh"/>
+                            <constraint firstItem="dZz-JV-SfG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-5" id="hHL-EK-hr3"/>
+                            <constraint firstItem="6yE-1D-cEm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="pkt-ej-1K7"/>
+                            <constraint firstItem="Eje-Um-DeS" firstAttribute="leading" secondItem="dZz-JV-SfG" secondAttribute="trailing" constant="50" id="qBL-Kx-YG6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6yE-1D-cEm" secondAttribute="bottom" id="syX-H6-dAo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Eje-Um-DeS" secondAttribute="bottom" constant="2" id="wHw-Fc-TLg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6yE-1D-cEm" secondAttribute="bottom" id="zRG-Zm-Sf5"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="X7f-cf-gRb" id="ZQK-hS-Fz7"/>
+                        <outlet property="signalImageView" destination="qBh-xo-8HB" id="DkW-ue-RYM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="322"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background.png" width="568" height="320"/>
+        <image name="btn_blue_off.png" width="72" height="81"/>
+        <image name="btn_red_off.png" width="72" height="81"/>
+        <image name="btn_yellow_off.png" width="72" height="81"/>
+        <image name="signal_blue.png" width="265" height="82"/>
+    </resources>
+</document>

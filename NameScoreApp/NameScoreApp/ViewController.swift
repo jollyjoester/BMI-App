@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  MyFirstApp
+//  NameScoreApp
 //
-//  Created by 山田卓 on 2016/08/06.
+//  Created by 山田卓 on 2016/08/14.
 //  Copyright © 2016年 TakuYamada. All rights reserved.
 //
 
@@ -10,12 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var mylabel: UILabel!
-    @IBAction func changelabel(sender: AnyObject) {
-        mylabel.text = "Hallow World"
-    }
-    
-    @IBAction func unwindToTop(segue: UIStoryboardSegue){}
+    @IBOutlet weak var textField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +20,11 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let resultViewController: ResultViewController = segue.destinationViewController as! ResultViewController
+        resultViewController.myName = self.textField.text!
     }
 
 
